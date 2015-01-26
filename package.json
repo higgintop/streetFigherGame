@@ -1,0 +1,33 @@
+{
+  "name": "streetFigherGame",
+  "version": "1.0.0",
+  "description": "This is a street fight to the death",
+  "main": "app.js",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "npm run lint-json && npm run lint-js && npm run lint-js-style",
+    "lint-json": "jsonlint -q package.json .jscsrc .jshintrc",
+    "lint-js": "jshint .",
+    "lint-js-style": "jscs ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/higgintop/streetFigherGame.git"
+  },
+  "author": "Allison <higgintop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/higgintop/streetFigherGame/issues"
+  },
+  "homepage": "https://github.com/higgintop/streetFigherGame",
+  "directories": {
+    "test": "test"
+  }
+}
